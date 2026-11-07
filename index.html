@@ -5,7 +5,7 @@
 const BASE='https://vdnimhchsubozhogfvtv.supabase.co',KEY='sb_publishable_YiDio01MaZPndBEgWSZLGA_qPKsteTZ';let token='',userId='';const $=id=>document.getElementById(id);
 async function api(path,options={}){const response=await fetch(BASE+path,{...options,headers:{apikey:KEY,Authorization:'Bearer '+(token||KEY),'Content-Type':'application/json',...(options.headers||{})}});const raw=await response.text();let data;try{data=raw?JSON.parse(raw):null}catch{throw Error('Respuesta inesperada del servidor')}if(!response.ok)throw Error(data?.msg||data?.message||data?.error_description||'Error '+response.status);return data}
 const MEDIA_LIBRARY={
-'Aprendizaje automático, datos y evaluación de modelos':{video:'SAUeGtyLsrk',caption:'Introducción a Machine Learning Crash Course · Google for Developers (inglés)',stages:['Datos de entrenamiento','Modelo y predicción','Prueba independiente','Métricas y errores']},
+'Aprendizaje automático, datos y evaluación de modelos':{video:'c9U33RIF0rc',caption:'Curso ML 2026 #1 · Introducción al Machine Learning y sus paradigmas · Programming Pills (español)',stages:['Datos de entrenamiento','Modelo y predicción','Prueba independiente','Métricas y errores']},
 'Qué es la IA: capacidades, límites y mapa de tecnologías':{stages:['Problema concreto','¿Reglas o aprendizaje?','Prueba y verificación','Supervisión humana']},
 'Modelos de lenguaje: tokens, contexto y predicción':{stages:['Texto de entrada','Tokens y contexto','Predicción de respuesta','Verificación externa']},
 'Arquitectura de prompts: objetivo, contexto y restricciones':{stages:['Objetivo','Contexto y datos','Límites y formato','Evaluación del resultado']},
